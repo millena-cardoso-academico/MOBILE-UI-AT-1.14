@@ -1,0 +1,94 @@
+.listaRespostas {
+  background-color: #ffb3c6;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.resposta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ffe5ec;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.textoResposta {
+  font-size: 0.9rem;
+  color: #333;
+  text-align: justify;
+}
+
+.interacoes {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.likeButton,
+.responseButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.likeButton img,
+.responseButton img {
+  width: 18px;
+  margin-right: 5px;
+}
+
+.likeButton:hover,
+.responseButton:hover {
+  filter: brightness(1.2);
+}
+
+@media (min-width: 768px) {
+  .listaRespostas {
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  .resposta {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .avatar {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+
+  .textoResposta {
+    flex: 1;
+    font-size: 1rem;
+  }
+
+  .interacoes {
+    margin-top: 0;
+  }
+
+  .likeButton img,
+  .responseButton img {
+    width: 20px;
+  }
+}

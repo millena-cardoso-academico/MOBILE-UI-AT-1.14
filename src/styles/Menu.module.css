@@ -1,0 +1,80 @@
+.menuContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffe5ec;
+  padding: 15px;
+  position: relative;
+}
+
+.menuItems {
+  display: none;
+  flex-direction: column;
+  background-color: #ffb3c6;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menuItems.open {
+  display: flex;
+}
+
+.menuItem {
+  font-size: 0.9rem;
+  text-align: left;
+  padding: 5px 0;
+  color: #333;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+.menuItem:hover {
+  color: #ff8fab;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.hamburgerMenu {
+  display: block;
+  cursor: pointer;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 15px;
+}
+
+@media (min-width: 768px) {
+  .menuContainer {
+    justify-content: center;
+  }
+
+  .menuItems {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    width: auto;
+  }
+
+  .menuItem {
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0;
+  }
+
+  .menuItem:hover {
+    font-size: 1.2rem;
+  }
+
+  .hamburgerMenu {
+    display: none;
+  }
+}

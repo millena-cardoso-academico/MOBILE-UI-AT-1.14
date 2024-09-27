@@ -1,0 +1,22 @@
+.header {
+  background-color: #ff8fab;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 2px solid #fb6f92;
+}
+
+.title {
+  font-family: "Sacramento", cursive;
+  color: #b30047;
+  font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,114 @@
+.topicoPrincipal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffb3c6;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titulo {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.subtitulo {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.descricao {
+  font-size: 0.9rem;
+  color: #333;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.interacoes {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.likeButton,
+.responseButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.likeButton img,
+.responseButton img {
+  width: 18px;
+  margin-right: 5px;
+}
+
+.likeButton:hover,
+.responseButton:hover {
+  filter: brightness(1.2);
+}
+
+@media (min-width: 768px) {
+  .topicoPrincipal {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .avatar {
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .titulo {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .subtitulo {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  .descricao {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .interacoes {
+    justify-content: flex-end;
+    margin-top: auto;
+    gap: 10px;
+  }
+
+  .likeButton img,
+  .responseButton img {
+    width: 20px;
+  }
+}
